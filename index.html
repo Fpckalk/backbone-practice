@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Practice Backbone</title>
+</head>
+<body>
+
+	<h1>Practice Backbone</h1>
+
+	<form id="new-tweet">
+		<label>Author:</label><input id="author-name" name="author-name" type="text">
+		<label>Status:</label><input id="status-update" name="status-update" type="text">
+		<button>Submit</button>
+	</form>
+	<hr>
+	<div id="tweets-container"></div>
+
+	<script type="text/template" id="tweet-template">
+		<span class="author"><%= author %>:</span>
+		<span class="status-update"><%= status %>:</span>
+	</script>
+
+	<!-- JS Libs -->
+	<script src="lib/underscore-min.js"></script>
+	<script src="lib/jquery-2.0.3.min.js"></script>
+	<script src="lib/backbone-min.js"></script>
+	<!-- Main app -->
+	<script src="js/app.js"></script>
+</body>
+</html>
